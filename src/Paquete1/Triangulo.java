@@ -15,4 +15,17 @@ public class Triangulo {
     public int area;
     public int perimetro;
     
+   public Triangulo (int lados, int medida){
+       this.lados=lados;
+       this.medida=medida;
+   } 
+   public Triangulo(){
+    this(3,5);
+}
+   public int perimetro (){
+       return lados*medida;
+   }
+   public int lados(){
+       return lados;
+   }
 }

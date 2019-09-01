@@ -13,11 +13,20 @@ public class Rectangulo {
    public int lados;
    public int medida;
    public int area;
-   public String perimetro;
+   public int perimetro;
    
    public Rectangulo (int lados, int medida){
        this.lados=lados;
        this.medida= medida;
+   }
+   public Rectangulo (){
+       this (5,3);
+   }
+   public int area (){
+       return lados*medida;
+   }
+   public int perimetro(){
+       return ((2*lados)+(2*medida));
    }
    
 }

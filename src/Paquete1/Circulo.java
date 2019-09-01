@@ -11,7 +11,20 @@ package Paquete1;
  */
 public class Circulo {
     int lados;
-    int medida;
-    int area;
-    int perimetro;
+    double medida;
+    double area;
+    double perimetro;
+    
+    public Circulo (double medida){
+        this.medida=medida;
+    }
+    public Circulo (){
+        this(3);
+    }
+    public double perimetro(){
+        return 2*Math.PI*medida;
+    }
+    public double area(){
+        return Math.PI*Math.sqrt(medida);
+    }
 }
